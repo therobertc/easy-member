@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Home() {
+export default function Profile() {
   return (
     <div className="container">
       <Head>
@@ -12,11 +12,11 @@ export default function Home() {
       <main>
         <h1 className="title">
           <Link href="/levels/level-one">
-            <a> EasyMember</a>
+            <a> My Business, Inc.</a>
           </Link>
         </h1>
 
-        <p className="description">Make recurring revenue with subscriptions</p>
+        <p className="description">My business collects subscriptions</p>
 
         <div className="grid">
           <Link href="/levels/level-one">
@@ -59,14 +59,38 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <Link href="/account/signup">
-          <a
-            // href="https://nextjs.org/docs"
-            className="getstarted"
-          >
-            <p style={{ fontFamily: "Verdana", fontSize: 18 }}> Get started</p>
-          </a>
-        </Link>
+        <div style={{ display: "flex", flexDirection: "row", flex: 1 }}>
+          <Link href="/account/signup">
+            <a
+              // href="https://nextjs.org/docs"
+              className="getstarted"
+            >
+              <p style={{ fontFamily: "Verdana", fontSize: 18 }}>
+                Edit Business
+              </p>
+            </a>
+          </Link>
+
+          <Link href="/account/signup">
+            <a
+              // href="https://nextjs.org/docs"
+              className="getstarted"
+            >
+              <p style={{ fontFamily: "Verdana", fontSize: 18 }}>Add Levels</p>
+            </a>
+          </Link>
+
+          <Link href="/account/signup">
+            <a
+              // href="https://nextjs.org/docs"
+              className="getstarted"
+            >
+              <p style={{ fontFamily: "Verdana", fontSize: 18 }}>
+                Share Business
+              </p>
+            </a>
+          </Link>
+        </div>
       </main>
 
       <footer>
@@ -77,7 +101,7 @@ export default function Home() {
         >
           Powered by
           {/* <img src="/vercel.svg" alt="Vercel Logo" className="logo" /> */}
-          <h3> &nbsp; EasyMember, Inc. </h3>
+          <h3> ChartBot Capital, Inc.</h3>
         </a>
       </footer>
 
@@ -202,7 +226,6 @@ export default function Home() {
 
         .getstarted {
           margin: 0.2rem;
-          flex-basis: 45%;
 
           text-align: center;
           color: #ffffff;
