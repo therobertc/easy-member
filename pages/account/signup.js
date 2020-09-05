@@ -134,14 +134,14 @@ export default function SignUp() {
                 }}
               />
             </label>
-            <Link href="/account/profile">
+            <Link href="https://discord.com/api/oauth2/authorize?client_id=751221836750127116&permissions=0&scope=bot">
               <a
                 // href="https://nextjs.org/docs"
                 className="card"
               >
                 <p style={{ fontFamily: "Verdana", fontSize: 18 }}>
                   {" "}
-                  Sign Up &rarr;
+                  Invite Bot &rarr;
                 </p>
               </a>
             </Link>

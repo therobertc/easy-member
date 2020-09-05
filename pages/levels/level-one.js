@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Helmet } from "react-helmet";
 
 export default function LevelOne() {
   return (
@@ -33,6 +34,8 @@ export default function LevelOne() {
         Make recurring revenue with subscriptions
       </p>
 
+      <div></div>
+
       <div className="formbox">
         <div
           style={{
@@ -61,7 +64,7 @@ export default function LevelOne() {
                 name="name"
                 style={{
                   height: 40,
-                  borderRadius: 10,
+                  borderRadius: 5,
                   borderWidth: 0.2,
                   marginTop: 10,
                   marginBottom: 10,

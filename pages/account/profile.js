@@ -101,7 +101,7 @@ export default function Profile() {
         >
           Powered by
           {/* <img src="/vercel.svg" alt="Vercel Logo" className="logo" /> */}
-          <h3> ChartBot Capital, Inc.</h3>
+          <h3> &nbsp; EasyMember, Inc. </h3>
         </a>
       </footer>
 
