@@ -134,7 +134,9 @@ export default function SignUp() {
                 }}
               />
             </label>
-            <Link href="https://discord.com/api/oauth2/authorize?client_id=751221836750127116&permissions=0&scope=bot">
+            {/* <Link href="https://discord.com/api/oauth2/authorize?client_id=751221836750127116&permissions=0&scope=bot"> */}
+
+            <Link href="/account/profile">
               <a
                 //ref="https://nextjs.org/docs"
                 //https://discord.com/api/oauth2/authorize?client_id=751221836750127116&permissions=0&scope=bot
@@ -142,7 +144,7 @@ export default function SignUp() {
               >
                 <p style={{ fontFamily: "Verdana", fontSize: 18 }}>
                   {" "}
-                  Invite Bot &rarr;
+                  Save Business &rarr;
                 </p>
               </a>
             </Link>

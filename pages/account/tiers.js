@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Home() {
+export default function Tiers() {
   return (
     <div className="container">
       <Head>
-        <title>EasyMember</title>
+        <title>Choose Tiers</title>
       </Head>
 
       <main>
@@ -17,38 +17,46 @@ export default function Home() {
 
         <p className="description">Make recurring revenue with subscriptions</p>
 
-        <div style={{ paddingBottom: 30 }}>
-          <form
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              backgroundColor: "white",
-              paddingLeft: 60,
-              border: "1px solid black",
-              height: 50,
-              borderRadius: 20,
-              justifyContent: "center",
-              alignItems: "center",
-              width: 400
-            }}
-          >
-            <p style={{ fontSize: 20 }}>easymember.com/</p>
+        <div className="grid">
+          <Link href="/levels/level-one">
+            <a
+              // href="https://nextjs.org/docs"
+              className="card"
+            >
+              <h3>Level 1 - $10 &rarr;</h3>
+              <p>Access level 1 features.</p>
+            </a>
+          </Link>
 
-            <input
-              type="text"
-              name="name"
-              placeholder="username"
-              style={{
-                height: 40,
-                borderRadius: 20,
-                borderWidth: 0,
-                border: "0px solid lightgrey",
-                width: 180,
-                fontSize: 20,
-                marginRight: 20
-              }}
-            />
-          </form>
+          <Link href="/levels/level-two">
+            <a
+              // href="https://nextjs.org/docs"
+              className="card"
+            >
+              <h3>Level 2 - $25 &rarr;</h3>
+              <p>Access level 2 features.</p>
+            </a>
+          </Link>
+
+          <Link href="/levels/level-three">
+            <a
+              // href="https://nextjs.org/docs"
+              className="card"
+            >
+              <h3>Level 3 - $50 &rarr;</h3>
+              <p>Access level 3 features.</p>
+            </a>
+          </Link>
+
+          <Link href="/levels/level-four">
+            <a
+              // href="https://nextjs.org/docs"
+              className="card"
+            >
+              <h3>Level 4 - $100 &rarr;</h3>
+              <p>Access level 4 features.</p>
+            </a>
+          </Link>
         </div>
         <Link href="/account/signup">
           <a
